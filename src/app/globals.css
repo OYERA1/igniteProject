@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background-primary: 18 18 20;
+    --background-secondary: 32 32 36;
+    --content-green: 0 135 95;
+    --content-hover-green: 0, 135, 95; 
+    --content-red: 171 34 46
+    --content-hover-red: 122 25 33;
+    --text-primary: 225 225 230;
+    --text-background: 41 41 46;
+  }
+  :root[theme='light'] {
+    --background-primary: 18 18 20;
+    --background-secondary: 32 32 36;
+    --content-green: 0 135 95;
+    --content-hover-green: 1 95 67;
+    --content-red: 171 34 46
+    --content-hover-green: 122 25 33;
+    --text-primary: 225 225 230;
+    --text-background: 41 41 46;
+  }
+}
+
+*, body {
+ font-family: var(--font-roboto);
+ margin: 0;
+}
+
+.input {
+  @apply bg-transparent;
+  @apply border-b-2;
+  @apply border-gray-500;
+  @apply focus:outline-none;
+  @apply focus:border-content-green;
+  @apply placeholder:font-semibold;
+  @apply p-2;
+  
+  
+}
+
+
+.input[type=number]::-webkit-inner-spin-button,
+.input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none ;
+  text-align: center;
+  margin: 0;
+
+}
+
+
+.input[type=number] {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-right: 0;
+  padding-left: 0;
+}
