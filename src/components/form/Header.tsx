@@ -1,11 +1,3 @@
-import { Controller, UseFormRegister } from 'react-hook-form'
-import { ContentType } from '../../../context/useCycle'
-import { ChangeEvent, useEffect, useState } from 'react'
-
-type FormHeaderProps = {
-    register: UseFormRegister<ContentType>
-    isEnable: (newState: boolean) => void
-}
 
 export default function FormHeader() {
     return (

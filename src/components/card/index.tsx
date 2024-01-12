@@ -17,8 +17,8 @@ export default function Card({
         <div
             className="
         flex flex-col
-        min-w-[70rem]
-        
+        w-[70rem]
+        h-[44rem]
         rounded-xl p-10
         bg-secondary text-text-primary"
         >
