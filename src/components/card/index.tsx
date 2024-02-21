@@ -1,8 +1,8 @@
 'use client'
 
+import { ReactNode } from 'react'
 import { Clock, Scroll } from '@phosphor-icons/react'
 import Link from 'next/link'
-import { ReactNode } from 'react'
 
 export default function Card({
     children,
@@ -29,8 +29,8 @@ export default function Card({
                         <Clock
                             size={size}
                             className={
-                                color == 'home'
-                                    ? `text-content-green`
+                                color === 'home'
+                                    ? 'text-content-green'
                                     : undefined
                             }
                         />
@@ -39,8 +39,8 @@ export default function Card({
                         <Scroll
                             size={size}
                             className={
-                                color == 'history'
-                                    ? `text-content-green`
+                                color === 'history'
+                                    ? 'text-content-green'
                                     : undefined
                             }
                         />

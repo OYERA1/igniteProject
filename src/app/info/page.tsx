@@ -1,10 +1,3 @@
-
 export default function ComponentName() {
-  
-  
-  return (
-        <div>
-      Olá
-       </div>
-  );
-};
+	return <div>Olá</div>;
+}
