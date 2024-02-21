@@ -13,24 +13,29 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				primary: "rgb(var(--background-primary))",
-				secondary: "rgb(var(--background-secondary))",
-				content: {
-					green: "rgb(var(--content-green))",
-					red: "rgb(var(--content-red))",
-					hover: {
-						green: "rgb(var(--content-hover-green))",
-						red: "rgb(var(--content-hover-red))",
-					},
+				product: {
+					green: "rgb(var(--product-green))",
+					"green-dark": "rgb(var(--product-green-dark))",
+					"green-light": "rgb(var(--product-green-light))",
 				},
-				text: {
-					primary: "rgb(var(--text-primary))",
-					background: "rgb(var(--text-background))",
+				feedback: {
+					red: "rgb(var(--feedback-red))",
+					"red-dark": "rgb(var(--feedback-red-dark))",
+				},
+				base: {
+					background: "rgb(var(--base-gray1))",
+					elements: "rgb(var(--base-gray2))",
+					divider: "rgb(var(--base-gray3))",
+					placeholder: "rgb(var(--base-gray4))",
+					label: "rgb(var(--base-gray5))",
+					text: "rgb(var(--base-gray6))",
+					title: "rgb(var(--base-gray7))",
+					white: "rgb(var(--base-white))",
 				},
 			},
 			fontFamily: {
-				sans: "var(--font-roboto)",
-				mono: "var(--font-roboto-mono)",
+				roboto: ["var(--font-roboto)"],
+				"roboto-mono": ["var(--font-roboto-mono)"],
 			},
 		},
 		plugins: [

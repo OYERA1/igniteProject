@@ -1,17 +1,5 @@
-"use client";
-
-import Card from "@/components/card";
-import Container from "@/components/container";
-import Form from "@/components/form/Form";
-import HistoryComponent from "@/components/historyComponent";
-
+import Card from "@/src/components/Card";
+import Container from "@/components/Container";
 export default function History() {
-	const selected = "history";
-	return (
-		<Container>
-			<Card color={selected}>
-				<HistoryComponent />
-			</Card>
-		</Container>
-	);
+  return <Container>ok </Container>;
 }

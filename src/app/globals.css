@@ -4,58 +4,42 @@
 
 @layer base {
   :root {
-    --background-primary: 18 18 20;
-    --background-secondary: 32 32 36;
-    --content-green: 0 135 95;
-    --content-hover-green: 0, 135, 95; 
-    --content-red: 171 34 46
-    --content-hover-red: 122 25 33;
-    --text-primary: 225 225 230;
-    --text-background: 41 41 46;
+    --product-green: 0 135 95;
+    --product-green-light: 0 179 126;
+    --product-green-dark: 1 95 67;
+    --feedback-red: 171 34 46;
+    --feedback-red-dark: 122 25 33;
+    --base-gray1: 18 18 20;
+    --base-gray2: 32 32 36;
+    --base-gray3: 41 41 46;
+    --base-gray4: 124 124 138;
+    --base-gray5: 141 141 153;
+    --base-gray6: 196 196 204;
+    --base-gray7: 225 225 230;
+    --base-white: 255 255 255;
   }
-  :root[theme='light'] {
-    --background-primary: 18 18 20;
-    --background-secondary: 32 32 36;
-    --content-green: 0 135 95;
-    --content-hover-green: 1 95 67;
-    --content-red: 171 34 46
-    --content-hover-green: 122 25 33;
-    --text-primary: 225 225 230;
-    --text-background: 41 41 46;
+  :root[theme="light"] {
+    --product-green: 0 135 95;
+    --product-green-light: 0 179 126;
+    --product-green-dark: 1 95 67;
+    --feedback-red: 171 34 46;
+    --feedback-red-dark: 122 25 33;
+    --base-gray1: 18 18 20;
+    --base-gray2: 32 32 36;
+    --base-gray3: 50 50 56;
+    --base-gray4: 124 124 138;
+    --base-gray5: 141 141 153;
+    --base-gray6: 196 196 204;
+    --base-gray7: 225 225 230;
+    --base-white: 255 255 255;
   }
 }
 
-*, body {
- font-family: var(--font-roboto);
- margin: 0;
-}
-
-.input {
-  @apply bg-transparent;
-  @apply border-b-2;
-  @apply border-gray-500;
-  @apply focus:outline-none;
-  @apply focus:border-content-green;
-  @apply placeholder:font-semibold;
-  @apply p-2;
-  
-  
-}
-
-
-.input[type=number]::-webkit-inner-spin-button,
-.input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none ;
-  text-align: center;
+*,
+body {
+  font-family: var(--font-roboto);
   margin: 0;
-
-}
-
-
-.input[type=number] {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  padding-right: 0;
-  padding-left: 0;
+  padding: 0;
+  min-height: none;
+  min-width: none;
 }

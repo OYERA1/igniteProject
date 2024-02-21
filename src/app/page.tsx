@@ -1,16 +1,15 @@
-'use client'
-
-import Card from '@/components/card'
-import Container from '@/components/container'
-import Form from '@/components/form/Form'
+import Card from "@/src/components/Card";
+import Container from "@/components/Container";
+import Form from "@/components/Form";
+import Header from "@/components/Header";
 
 export default function Home() {
-    const selected = 'home'
-    return (
-        <Container>
-            <Card color={selected}>
-                <Form />
-            </Card>
-        </Container>
-    )
+  return (
+    <Card>
+      <Header />
+      <Form>
+        FormHeader
+      </Form>
+    </Card>
+  );
 }
