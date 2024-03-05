@@ -1,5 +1,11 @@
-import Card from "@/src/components/Card";
-import Container from "@/components/Container";
-export default function History() {
-  return <Container>ok </Container>;
+import HistoryHeader from "@/components/History/HistoryHeader";
+import HistoryMain from "@/src/components/History/HistoryMain";
+import HistoryTable from "@/src/components/History/HistoryTable";
+export default function HistoryPage() {
+  return (
+    <HistoryMain>
+      <HistoryHeader />
+      <HistoryTable />
+    </HistoryMain>
+  );
 }

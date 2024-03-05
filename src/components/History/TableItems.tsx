@@ -1,4 +1,4 @@
-import { CycleProps } from "@/components/TableHistory";
+import { CycleProps } from "@/src/components/History/HistoryTable";
 
 interface CycleArr {
   cycle: CycleProps[];
@@ -18,12 +18,12 @@ export default function TableItems({ cycle }: CycleArr) {
     }
   };
   return (
-    <ul className="flex flex-col gap-2 ">
+    <ul>
       {cycle.map((item) => (
-        <li key={item.id} className="flex justify-between rounded px-6 py-3">
-          <p className="min-w-max max-w-56">{item.content}</p>
+        <li key={item.id}>
+          <p>{item.content}</p>
 
-          <div className="flex gap-5 ">
+          <div>
             <div className="flex w-20 justify-end gap-1">
               <p>{item.time}</p>
               <p>Minutos</p>

@@ -23,6 +23,7 @@ const config: Config = {
 					"red-dark": "rgb(var(--feedback-red-dark))",
 				},
 				base: {
+					td: "#2d2b32",
 					background: "rgb(var(--base-gray1))",
 					elements: "rgb(var(--base-gray2))",
 					divider: "rgb(var(--base-gray3))",

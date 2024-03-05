@@ -1,15 +1,10 @@
-import Card from "@/src/components/Card";
-import Container from "@/components/Container";
-import Form from "@/components/Form";
-import Header from "@/components/Header";
+import Form from "@/src/components/Form/Form";
+import FormMain from "@/src/components/Form/Main";
 
-export default function Home() {
+export default async function Home() {
   return (
-    <Card>
-      <Header />
-      <Form>
-        FormHeader
-      </Form>
-    </Card>
+    <FormMain>
+      <Form />
+    </FormMain>
   );
 }

@@ -9,6 +9,7 @@
     --product-green-dark: 1 95 67;
     --feedback-red: 171 34 46;
     --feedback-red-dark: 122 25 33;
+    --base-td: 41 41 46;
     --base-gray1: 18 18 20;
     --base-gray2: 32 32 36;
     --base-gray3: 41 41 46;
@@ -24,6 +25,7 @@
     --product-green-dark: 1 95 67;
     --feedback-red: 171 34 46;
     --feedback-red-dark: 122 25 33;
+    --base-td: 41 41 46;
     --base-gray1: 18 18 20;
     --base-gray2: 32 32 36;
     --base-gray3: 50 50 56;
@@ -33,13 +35,23 @@
     --base-gray7: 225 225 230;
     --base-white: 255 255 255;
   }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0;
+    width: 0;
+  }
 }
 
 *,
 body {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
   font-family: var(--font-roboto);
   margin: 0;
   padding: 0;
-  min-height: none;
-  min-width: none;
+  min-height: 0;
+  min-width: 0;
 }
